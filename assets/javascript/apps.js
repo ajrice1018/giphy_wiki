@@ -3,7 +3,7 @@ $(function(){
 })
 
 //Initial Buttons to populate page when page is called
-var searchArray = ['Dog', 'Cat', 'Bird', 'Cheetah','Falcon'];
+var searchArray = ['Dog', 'Cat', 'Bird', 'Cheetah','Falcon', 'Corgis'];
 
 
 //Populates buttons to the page 
