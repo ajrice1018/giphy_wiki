@@ -12,7 +12,11 @@ body{
     text-align: center;
     background-color: lightcyan;
     color: black;
+    font-size: 10px;
+    margin: 20px 5px;
+    padding: 35px;
 }
+
 
 .container-fluid{
     text-align: center;
@@ -21,11 +25,12 @@ body{
     border-color: black;
     background-color: white;
     padding: 15px;
-    margin: 10px;
+    margin: 0px 5px 5px 0px;
 }
 
 .btn{
     border-radius: 2px;
     background-color: lightcyan;
     margin: 5px;
+    color: black;
 }
