@@ -34,3 +34,10 @@ body{
     margin: 5px;
     color: black;
 }
+
+input#addSearch{
+    border-radius: 2px;
+    background-color: lightcyan;
+    margin: 5px;
+    color: black;
+}

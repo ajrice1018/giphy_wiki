@@ -1,12 +1,13 @@
+//Populates button function
 $(function(){
     populateButtons(searchArray, 'searchButton', '#buttonArea');
 })
 
-//Initial Buttons to populate page when page is called
+//Array for Initial Buttons to populate page when page is called
 var searchArray = ['Dog', 'Cat', 'Bird', 'Cheetah','Falcon', 'Corgis'];
 
 
-//Populates buttons to the page 
+//Calls populateButtons function to the page 
 function populateButtons (searchArray, classToAdd, areaToAddTo){
     $(areaToAddTo).empty();
     for (i=0; i<searchArray.length; i++){
@@ -27,6 +28,8 @@ $(document).on('click', '.searchButton', function(){
         url: queryURL,
         method: 'GET',
     }).done(function(response){
+        
+        //Loops through the array to create items for HTML and then prepending it to the page. 
         for(var i=0; i < response.data.length; i++){
             var searchDiv = $('<div class="search-item">');
             var rating = response.data[i].rating;
